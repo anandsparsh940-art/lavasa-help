@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Submit a community incident report for Lavasa."><title>Report an incident | Lavasa Help</title><link rel="stylesheet" href="./lavasa.css"><script src="./lavasa.js" defer></script><link rel="icon" type="image/svg+xml" href="./lavasa-logo.svg"></head>
+<body data-page="report">
+  <header class="site-header"><div class="header-inner"><a class="brand" href="./lavasa-help.html" aria-label="Lavasa Help home"><img src="./lavasa-logo.svg" alt="Lavasa Help"></a><nav class="site-nav" aria-label="Main navigation"><a data-page-link="advisories" href="./advisories.html">Advisories</a><a data-page-link="incidents" href="./incidents.html">Incidents</a><a data-page-link="services" href="./services.html">Services</a><a data-page-link="emergency" href="./emergency.html">Emergency</a><a data-page-link="report" href="./report.html">Report an issue</a></nav></div></header>
+  <main class="container">
+    <section class="page-intro"><p class="eyebrow">Help your community respond</p><h1>Report an incident</h1><p class="lead">Share clear details and a location. For an immediate threat to life, call 112 or 108 directly.</p></section>
+    <form class="form-shell" id="incidentForm" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="381ab9b3-d7e1-4acd-bbea-94b3b37f086c">
+      <input type="hidden" name="subject" value="New incident report — Lavasa Help">
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
+      <div class="form-grid">
+        <div class="field"><label for="reporterName">Your name *</label><input id="reporterName" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="reporterEmail">Your email *</label><input id="reporterEmail" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="category">Category *</label><select id="category" name="category" required><option value="">Choose a category</option><option>Road or landslide</option><option>Water supply</option><option>Power</option><option>Garbage and sanitation</option><option>Streetlights</option><option>Wildlife</option></select></div>
+        <div class="field"><label for="area">Neighborhood *</label><select id="area" name="area" required><option value="">Choose an area</option><option>Dasve Town Center</option><option>Portofino Street</option><option>Mugaon Sector</option><option>Valley Villa Clusters</option><option>Temghar Ghat Road</option></select></div>
+        <div class="field full"><label for="title">Short summary *</label><input id="title" name="incident_title" maxlength="120" placeholder="Example: Fallen tree blocking Portofino road" required></div>
+        <div class="field full"><label for="landmark">Specific landmark</label><input id="landmark" name="landmark" placeholder="Building, block, road marker or nearby landmark"></div>
+        <div class="field"><label for="urgency">Urgency *</label><select id="urgency" name="urgency" required><option>Low</option><option>Medium</option><option selected>High</option><option>Critical</option></select></div>
+        <div class="field"><label for="source">Report type *</label><select id="source" name="source_classification" required><option value="community">Community report</option><option value="official">Official advisory</option></select></div>
+        <div class="field full"><label for="message">What happened? *</label><textarea id="message" name="message" placeholder="Describe what you observed and when." required></textarea></div>
+      </div>
+      <p class="form-note">Do not use this form for urgent emergencies. After successful submission, the report appears in the incident feed on this device. Reporter name and email are not shown there.</p>
+      <button class="button button-primary" type="submit">Send incident report</button>
+      <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><span class="footer-brand">Lavasa Help</span><p>For immediate danger, call 112 or 108.</p></div></footer>
+</body></html>

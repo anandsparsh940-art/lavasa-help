@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="100" viewBox="0 0 440 100" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">Lavasa Help</title>
+  <desc id="logo-desc">A map pin containing a community message bubble, next to the Lavasa Help wordmark.</desc>
+  <path d="M50 5C26 5 8 23 8 47c0 27 42 48 42 48s42-21 42-48C92 23 74 5 50 5Z" fill="#176b4b"/>
+  <path d="M27 37c0-10 8-18 18-18h12c10 0 18 8 18 18v4c0 10-8 18-18 18h-7L36 68v-12c-6-3-9-9-9-15v-4Z" fill="#fff"/>
+  <circle cx="42" cy="39" r="3" fill="#176b4b"/>
+  <circle cx="50" cy="39" r="3" fill="#176b4b"/>
+  <circle cx="58" cy="39" r="3" fill="#176b4b"/>
+  <text x="120" y="53" fill="#183a2b" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800" letter-spacing="-1.4">Lavasa</text>
+  <text x="254" y="53" fill="#176b4b" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800" letter-spacing="-1.4">Help</text>
+  <text x="122" y="78" fill="#66736b" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">COMMUNITY · SAFETY · SUPPORT</text>
+</svg>
